@@ -8,7 +8,11 @@
  */
 
 // Your code :
-
+function getLength(getLength){
+    if ( (!getLength.isArray) || (typeof getLength === "string") ) {
+        return(getLength.length);
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
